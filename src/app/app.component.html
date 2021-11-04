@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+      <ion-toolbar color="tangaroa">
+        <ion-title class="ion-text-center">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+         <ion-item color="tangaroa"  [routerLink]= "['/profile']">
+          <ion-icon name="person-circle" slot="start"></ion-icon>
+          <p>Profile</p>
+          </ion-item>
+
+        <ion-item color="tangaroa"[routerLink]= "['/home']">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <p >Home</p>
+        </ion-item>
+        
+        <ion-item color="tangaroa" [routerLink]= "['/faq']">
+          <ion-icon name="help-circle" slot="start"></ion-icon>
+          <p>FAQ</p>
+        </ion-item>
+        
+        <ion-item color="tangaroa" [routerLink]= "['/about']">
+            <ion-icon name="people" slot="start"></ion-icon>
+            <p >About</p>
+          </ion-item>
+
+          <ion-item color="tangaroa"  [routerLink]= "['/login']">
+          <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          <p >Log Out</p>
+        </ion-item>
+        
+     
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-app>

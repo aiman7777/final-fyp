@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="tangaroa" class="ion-text-center">
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title>Register</ion-title>
+  </ion-toolbar>
+ </ion-header>
+ <ion-content>
+
+  <div  class="ion-padding">
+  
+    <ion-item class="border" color="tangaroa">
+    <ion-label position="floating">Name:</ion-label>
+    <ion-input type="text" [(ngModel)]="user.name" required></ion-input >
+    </ion-item>
+    <ion-item class="border" color="tangaroa">
+      <ion-label position="floating">Age:</ion-label>
+      <ion-input type="number" [(ngModel)]="user.age" required></ion-input >
+      </ion-item>  
+   <ion-item class="border" color="tangaroa">
+  <ion-label position="floating">E-mail:</ion-label>
+  <ion-input type="email" [(ngModel)]="user.email" required></ion-input >
+  </ion-item>
+  <ion-item class="border" color="tangaroa">
+  <ion-label position="floating">Password:</ion-label>
+  <ion-input type="password" [(ngModel)]="user.password" required></ion-input >
+  </ion-item>
+  </div>
+  <ion-button
+  class="ion-padding"
+  expand="full"
+  shape="round"
+  color="tangaroa"
+  [routerLink]="['/login']"(click)="register(user)">
+  SUBMIT
+  </ion-button>
+ </ion-content>
+ 
